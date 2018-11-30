@@ -5,7 +5,11 @@
   <groupId>com.cai</groupId>
   <artifactId>simple</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <modules>
+    <module>framework</module>
+    <module>web</module>
+  </modules>
+  <packaging>pom</packaging>
 
   <name>simple</name>
   <url>http://maven.apache.org</url>
@@ -15,20 +19,15 @@
     <servlet.api.version>2.4</servlet.api.version>
   </properties>
 
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.12</version>
-      <scope>test</scope>
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
-    <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>javax.servlet-api</artifactId>
-      <!--<version>${servlet.api.version}</version>-->
-      <version>3.0.1</version>
-      <scope>provided</scope>
-    </dependency>
-  </dependencies>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.12</version>
+        <scope>test</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
 </project>
