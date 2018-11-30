@@ -12,6 +12,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <servlet.api.version>2.4</servlet.api.version>
   </properties>
 
   <dependencies>
@@ -20,6 +21,14 @@
       <artifactId>junit</artifactId>
       <version>4.12</version>
       <scope>test</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <!--<version>${servlet.api.version}</version>-->
+      <version>3.0.1</version>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
 </project>

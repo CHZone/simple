@@ -2,3 +2,5 @@
 .project
 .settings/
 target/
+simple.iml
+.idea/
